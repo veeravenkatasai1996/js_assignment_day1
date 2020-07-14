@@ -1,0 +1,39 @@
+<html>
+    <head> 
+        <title>Printing the date in required Format</title>
+        </head>
+        <body>
+            <script>
+            var a=new Date();
+            var dd = a.getDay();
+            var dname;
+            document.write(a);
+            document.write("<br>");
+            switch(dd){
+                case 0: dname="Sunday" ; break;
+                case 1: dname="Monday" ; break;
+                case 2: dname="Tuesday" ; break;
+                case 3: dname="Wenesday" ; break;
+                case 4: dname="Thrusday" ; break;
+                case 5: dname="Friday" ; break;
+                case 6: dname="Saturday" ; break;
+            }
+            document.write("Today is :  ")
+            document.write(dname);
+            document.write("<br>");
+            if(a.getHours()>12){
+                var p = a.getHours()-12;
+                var q= "pm";
+            }
+            else{
+                var p = a.getHours();
+                var q="Am"
+            }
+            var f1 =   (((p < 10)?"0":"") + p + q +":"+ ((a.getMinutes() < 10)?"0":"") + a.getMinutes() +":"+ ((a.getSeconds() < 10)?"0":"") + a.getSeconds());
+            document.write("Current Time :  ");
+            document.write(f1);
+
+        </script>
+        </body> 
+
+</html>
