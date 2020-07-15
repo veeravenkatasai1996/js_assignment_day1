@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods of console</title>
+    <script>
+        console.time();  
+        console.log("1");
+        console.error("Error in page");
+        console.warn("Warning message");
+        console.table({'a':1,'b':2});
+        console.group();
+        console.count();
+        console.count();
+        console.count();
+        console.groupEnd();
+        console.log("%c teja",'color:blue');
+        console.timeEnd();
+        // console.clear();
+    </script>
+</head>
+<body>
+    <h1>The following are Methods of Console Function:</h1>
+    <div>
+        log(),
+        error(),
+        warn(),
+        clear(),
+        time() and timeEnd(),
+        table(),
+        count(),
+        group() and groupEnd(),
+        custom console logs.
+      <dl>
+          <dt>console.log() -</dt>
+          <dd>Print the output to the console <br> Eg: console.log(1); </dd> <br>
+          <dt>console.error() -</dt>
+          <dd>Used to log error message to console . By default it is highlighted in red color <br> Eg:console.error("Error in page");</dd><br>
+          <dt>console.warn() -</dt>
+          <dd>Used to log warning to the console. By default it is highlighted in yellow color <br>Eg:console.warn("Warning message"); </dd><br>
+          <dt>console.clear() -</dt>
+          <dd>It is used to clear the console. <br>Eg:console.clear();</dd><br>
+          <dt>console.time() and console.timeEnd() -</dt>
+          <dd>Used to know amount of time spent on block or a function.<br>console.time();  console.timeEnd();</dd><br>
+          <dt>console.table() -</dt>
+          <dd>Used to generate a table inside console. <br> Eg:console.table({'a':1,'b':2}) </dd><br>
+          <dt>console.count() -</dt>
+          <dd>Count the number the function hit.<br>Eg:console.count()</dd> <br>
+          <dt>console.group() and console.groupEnd() -</dt>
+          <dd>Group into blocks. .</dd><br>
+          <dt>custom console logs - </dt>
+          <dd>Used for styling to custom logs . The syntax is to add %c  parameter. <br>Eg:console.log("%c venkat",'color:blue')</dd>
+          
+        
+        </dl>
+    </div>
+</body>
+</html>
