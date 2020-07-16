@@ -1,2 +1,3 @@
-# js_assignment_day1
-LetsUpgrade JS assignment day1
+# js_assignment
+LetsUpgrade JS assignment 
+
