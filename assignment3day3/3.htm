@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ let a=   Number(prompt("Please enter your marks :"));
+ let b=a/10;
+ b = ~~b;  //removing decimal
+ console.log("a....",b,typeof(a))
+ switch(b){
+    
+     case 10:
+     case 9:
+         console.log("Grade: A");
+         break;
+         case 8:
+         console.log("Grade: B");
+         break;
+
+     case 7:
+     console.log("Grade: C");
+         break;
+
+     case 6:
+     console.log("Grade: D");
+         break;
+
+     case 5:
+     console.log("Grade: E");
+         break;
+
+    default: console.log("Grade: Fail");
+
+ }
+
+</script>
+<body>
+    Getting marks in console , if you give marks
+</body>
+</html>
