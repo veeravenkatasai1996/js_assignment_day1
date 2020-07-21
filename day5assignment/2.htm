@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //create user
+        class User{
+            constructor(name,age,email){
+                this.name=name;
+                this.age=age;
+                this.email=email;
+                this.coins=0;
+                this.courses=['java'];
+
+            }
+            login(){
+                console.log(`${this.name} has logged in.`)
+            }
+            logout(){
+                console.log(`${this.name} has logged out.`)
+            }
+        }
+        let user1=new User('Ram ',25,'r@gmail.com');
+        console.log("user....",user1);
+
+        //creating a user ends
+
+        //create moderator
+
+        class Moderator extends User {
+        addcoins(){
+            this.coins++;
+        }
+        removecoins(){
+            this.coins--;  
+        }
+        }
+        let mod = new Moderator('milo',24,'m@gmail.com')
+        mod.addcoins();
+        mod.addcoins();
+        mod.addcoins();
+        mod.removecoins();
+        console.log("moderator...",mod)
+        //creating moderator ends
+        
+        //creating admin
+
+         class Admin extends Moderator{
+             addcourse(user,coursename){
+                 console.log("add course to user",user)
+             user.courses.push(coursename);
+             }
+
+         }
+         let ad = new Admin('venkat',24,'m@gmail.com')
+         console.log("admin....",ad)
+         ad.addcourse(user1,'javascript');
+
+
+         //creating admin ends
+        </script>
+</head>
+<body>
+  check console  
+</body>
+</html>

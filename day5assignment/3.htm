@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let data1 =[];
+        fetch('https://jsonplaceholder.typicode.com/todos')
+        .then(response=>response.json())
+        .then(data=>
+        {
+            console.log("Total todos....",data)
+            console.log("length....",data.length)
+            for(let i=0;i<data.length;i++){
+                if( data[i].completed == true){
+                   data1.push(data[i]);
+                }
+                
+
+            }
+            console.log("completed todos....",data1);
+        }
+       
+        )
+        </script>
+
+</head>
+<body>
+    see console for completed todos
+</body>
+</html>
