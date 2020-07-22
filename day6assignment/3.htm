@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dark{
+            background-color: black;
+            color: white;
+            height: auto;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="name">
+     
+    </div>
+    <div>
+        Time is
+    </div>
+    <div id="time">
+
+    </div>
+    <button id="mode" onclick="changeTheme()">Mode</button>
+</body>
+<script>
+    var a= prompt("Please enter your name");
+    document.getElementById("name").innerText=` welcome  to the webpage ${a} `;
+   //time
+    function clock(){
+        let date = new Date();
+        console.log("date....",date);
+       let  time= date.toLocaleTimeString();
+        console.log("time...",time);
+        document.getElementById("time").innerText=time;
+
+
+    }
+    setInterval(clock,1000);
+
+    //darkmode
+   function changeTheme(){
+       const attr=document.body;
+       attr.classList.toggle('dark');
+    // ='dark';
+
+    }
+
+</script>
+</html>
